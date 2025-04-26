@@ -27,6 +27,6 @@ else:
         if image_file.exists():
             st.markdown(f"### {image_file.stem.replace('_', ' ').title()}")
             image = Image.open(image_file)
-            st.image(image, caption=image_file.stem.replace('_', ' ').title(), use_column_width=True)
+            st.image(image, caption=image_file.stem.replace('_', ' ').title(), use_container_width=True)
         else:
             st.warning(f"Image not found: {image_file.name}")
